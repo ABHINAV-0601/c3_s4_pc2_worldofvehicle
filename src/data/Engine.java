@@ -1,6 +1,6 @@
 package data;
 
-public class Engine {
+public  class Engine {
     private String modelNo;
     private double maxPower;
     private int maxRPM;
@@ -37,4 +37,12 @@ public class Engine {
     public void setNoOfCylinders(int noOfCylinders) {
         this.noOfCylinders = noOfCylinders;
     }
+
+   public void display(){
+
+       System.out.println("modelNo = " + modelNo);
+       System.out.println("maxPower = " + maxPower +"kW");
+       System.out.println("maxRPM = " + maxRPM);
+       System.out.println("noOfCylinders = " + noOfCylinders);
+   }
 }

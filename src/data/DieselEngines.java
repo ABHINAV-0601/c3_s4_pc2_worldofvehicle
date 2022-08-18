@@ -1,9 +1,9 @@
 package data;
 
-public class PetrolEngines extends Engine{
+public class DieselEngines extends Engine {
     private String typeOfFuel;
 
-    public PetrolEngines(String modelNo, double maxPower, int maxRPM, int noOfCylinders, String typeOfFuel) {
+    public DieselEngines(String modelNo, double maxPower, int maxRPM, int noOfCylinders, String typeOfFuel) {
         super(modelNo, maxPower, maxRPM, noOfCylinders);
         this.typeOfFuel = typeOfFuel;
     }
@@ -16,7 +16,7 @@ public class PetrolEngines extends Engine{
 
     @Override
     public void display() {
-        System.out.println("Petrol Engine Details");
+        System.out.println("Diesel Engine Details");
         super.display();
         System.out.println("typeOfFuel = " + typeOfFuel);
     }
