@@ -1,24 +1,22 @@
 package data;
 
 public class ElectricEngines extends Engine{
-    private String typeOfFuel;
+    private int voltage;
 
-    public ElectricEngines(String modelNo, double maxPower, int maxRPM, int noOfCylinders, String typeOfFuel) {
-        super(modelNo, maxPower, maxRPM, noOfCylinders);
-        this.typeOfFuel = typeOfFuel;
+    public ElectricEngines(String modelNo, double maxPower, int maxRPM, int voltage) {
+        super(modelNo, maxPower, maxRPM);
+        this.voltage = voltage;
     }
-
-    public String getTypeOfFuel() {
-        return typeOfFuel;
+    public int getVoltage() {
+        return voltage;
     }
-    public void setTypeOfFuel(String typeOfFuel) {
-        this.typeOfFuel = typeOfFuel;
+    public void setVoltage(int voltage) {
+        this.voltage = voltage;
     }
-
     @Override
     public void display() {
         System.out.println("Electric Engine Details");
         super.display();
-        System.out.println("typeOfFuel = " + typeOfFuel);
+        System.out.println("voltage = " + voltage +"V");
     }
 }
